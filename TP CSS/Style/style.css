@@ -1,0 +1,100 @@
+body{
+	font-family: arial;
+	text-align: center;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+#global{
+	width: 100%;
+	height: 800px;
+	background: #ffffff;
+}
+#menu_bar{
+	background: #11A181;
+	height: 100px;
+	width: 100%;
+	line-height: 100px; /*idstance entre les liens*/
+	opacity: 0.8; /* c'est la transparence elle est compri entre 0 et 1*/
+}
+#menu_bar h1{
+	float: left;
+	font-weight: 400px; /* c'est le fait de le mettre en gras*/
+	color: white;
+	margin-left:20px;
+}
+#menu_bar ul{
+	float: center;
+	position: relative; /* relative c'est horizontal et absolute c'est vertical*/
+	margin-rigth: 100px;
+	line-height: 55px;
+}
+#menu_bar ul li{
+	list-style-type: none;/*c'est pour eliminer les puces*/
+	display: inline-block;/* c'est pour l'avoir sur la meme ligne*/
+}
+#menu_bar ul li a{
+	padding: 22px;
+	text-decoration: none; /*Enleve le soulignement des liens a cause de none*/
+	color: white;
+	display: block;
+}
+#menu_bar ul li:hover{
+background: #CCEE55;/*le hover permet d'avoir une couleur d'arriere plan au niveau des liens*/
+}
+#menu_bar ul li:hover ul{
+	display: block;
+}
+#menu_bar ul ul{
+	display: none;
+	width: 120px;
+	position: absolute;
+}
+#menu_bar ul li li{
+	background: #11A181;
+	display: block;
+}
+fieldset{
+	margin-top: 100px;
+	margin-left: 400px;
+	width: 600px;
+	height: 300px;
+	border: #11A181 dashed;
+}
+legend{
+	box-shadow: 6px 6px 6px #11A181;/* elle permet d'avoir de l'ombre*/
+	font-size: 25px;
+	color:#11A181;
+	font-family: italic;
+	font-weight: bold;
+}
+td{
+	padding: 15px;
+	color: #11A181;
+	font-weight: bold;
+	font-size: 20px;
+}
+td input{
+	background:#11A181;
+	border-radius: 5px;/*permet d'arrondir les champs*/
+	width: 140px;
+}
+fieldset p{
+	margin-left: 90px;	
+}
+p input:hover{
+	background:#CCEE55;
+	color: #11A181;
+	font-weight: bold;
+}
+p input{
+	font-family: georgia;
+	background: #11A181;
+	margin-right: 10px;
+	font-size: 20px;
+	padding: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	color: white;
+}
